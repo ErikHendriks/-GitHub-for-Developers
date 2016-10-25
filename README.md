@@ -1,8 +1,11 @@
-# -GitHub-for-Developers\n
+# -GitHub-for-Developers
 Command line history form  GitHub for Developers 25/26-10-16
 
+
 25 Oktober:
+
 git --version
+
 git config --global --list
 git config --global user.name "Firstname Lastname"
 git config --global user.email "me@example.com"
