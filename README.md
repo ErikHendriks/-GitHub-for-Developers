@@ -1,4 +1,4 @@
-# -GitHub-for-Developers
+# -GitHub-for-Developers\n
 Command line history form  GitHub for Developers 25/26-10-16
 
 25 Oktober:
@@ -56,7 +56,7 @@ git config --global fetch.prune true
 git pull
 :warning: Note:
 
-git config --global core.autocrlf input is for Unix/Mac
-git config --global core.autocrlf true is for Windows
+"git config --global core.autocrlf input" is for Unix/Mac
+"git config --global core.autocrlf true" is for Windows
 
 26 Oktober:
