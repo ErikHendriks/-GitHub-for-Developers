@@ -1,1 +1,162 @@
+# -GitHub-for-Developers
+Command line history form  GitHub for Developers 26-10-16
 
+26 Oktober:
+git clone https://github.com/githubteacher/github-games.git
+cd github-games
+ls
+git branch readme-update
+git checkout readme-update
+atom .
+git status
+git add README.md
+git commit -m "Fix README URL"
+git push
+git branch --all
+git push --set-upstream origin readme-update
+git checkout master
+git pull
+git checkout gh-pages
+git pull
+git branch --all
+git branch -d readme-update
+git log
+git log --oneline
+git log --oneline -n 4
+git log --oneline
+git commit --amend
+git lol
+git log --oneline
+git revert 2710412
+git push
+
+git checkout stats-update
+git diff
+git diff gh-gages..stats-update
+git diff -- gh-gages..stats-update
+git diff --color-words gh-gages..stats-update
+git diff --color-words gh-pages..stats-update
+git checkout gh-pages
+git merge stats-update
+git status
+git diff --color-words gh-pages..stats-update
+git status
+git add index.html
+git status
+git commit
+
+git checkout shape-colors
+git add inde.html
+git status
+git commit -m "Change shape colors"
+git push
+git checkout gh-pages
+git fetch origin
+git checkout -b shape-colors origin/shape-colors
+git checkout shape-colors
+git merge gh-pages
+git status
+git add index.html
+git status
+git commit -m "Fix shape color conflict"
+git checkout gh-pages
+git merge --no-ff shape-colors
+git push origin gh-pages
+
+git checkout -b slow-down
+mkdir images
+git status
+git mv texture.jpg images/texture.jpg
+git status
+git add -p index.html
+git status
+git commit -m "Move images to its own folder"
+git status
+git add index.html
+git status
+git commit -m "Change game speed"
+git lol
+git push
+git push -u origin slow-down
+
+cd scratch
+cd github-games
+git log --oneline --graph --decorate --all
+git config --global alias.lol "log --oneline --graph --decorate --all"\
+
+git lol
+cd ..
+mkdir history-rewriting
+cd history-rewriting
+l
+git init
+ls
+l
+touch README.md
+git add README.md
+git commit -m "Initial commit"
+git lol
+touch file1.txt
+git add file.txt
+git add file1.txt
+git commit -m "Add file1"
+touch file2.txt
+git add file2.txt
+git commit -m "Add file2"
+touch file3.txt
+git add file3.txt
+git commit -m "Add file3"
+touch file4.txt
+git add file4.txt
+git commit -m "Add file4"
+ls
+git lol
+git reset --soft HEAD~2
+git status
+git lol
+git add .
+git commit -m "Add file3 and file4"
+git lol
+git reset e569553
+git status
+git add .
+git commit -m "Add file3 and file4"
+git lol
+git reset --hard a56c62f
+ls
+git status
+git lol
+
+git reflog
+git cherry-pick e569553
+git lol
+git reflog
+git cherry-pick 4770822
+ls
+git reflog
+git reset --hard fcc33b5
+ls
+git lol
+
+git checkout -b rebase-me
+touch file7.txt
+git add file7.txt
+git commit -m "Add file7"
+touch file8.txt
+git add file8.txt
+git commit -m "Add file8"
+git checkout master
+touch file5.txt
+git add file5.txt
+git commit -m "Add file5"
+touch file6.txt
+git add file6.txt
+git commit -m "Add file6"
+git lol
+git checkout rebase-me
+git rebase -i master
+git lol
+git checkout master
+git lol
+git merge rebase-me
+git lol
